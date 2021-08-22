@@ -8,19 +8,33 @@ body {
   font-family: "Source Code Pro", monospace;
   background: #b6e3ff;
 }
-
-a {
+body header {
+  padding: 20px 10%;
+  height: 10%;
+  background: #4d82cb;
+  width: 100%;
+}
+body header nav, body header ul, body header li {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  list-style: none;
+}
+body header nav a, body header ul a, body header li a {
   font-weight: 700;
   font-size: 18px;
   color: #000;
   text-decoration: none;
 }
 
-header {
-  padding: 20px 10%;
-  height: 10%;
-  background: #4d82cb;
-  width: 100%;
+input {
+  padding: 6px;
+  width: 270px;
+  font-size: 16px;
+  border: 1px solid #fff8dc;
+  border-radius: 30px;
+  color: #000;
+  outline: none;
 }
 
 .logo {
@@ -38,23 +52,6 @@ header {
   border-radius: 30px;
   color: #000;
   cursor: pointer;
-}
-
-nav, ul, li {
-  display: flex;
-  justify-content: space-between;
-  margin: 30px;
-  list-style: none;
-}
-
-input {
-  padding: 6px;
-  width: 270px;
-  font-size: 16px;
-  border: 1px solid #fff8dc;
-  border-radius: 30px;
-  color: #000;
-  outline: none;
 }
 
 /*# sourceMappingURL=main.css.map */
