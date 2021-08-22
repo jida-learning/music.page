@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Code Pro", monospace;
+  background: #b6e3ff;
+}
+
+a {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+}
+
+header {
+  padding: 20px 10%;
+  height: 10%;
+  background: #4d82cb;
+  width: 100%;
+}
+
+.logo {
+  border-radius: 100%;
+  width: 240%;
+  height: auto;
+}
+
+.login > button {
+  padding: 6px;
+  width: 100px;
+  height: 36px;
+  font-size: 13px;
+  border: 1px solid #4d82cb;
+  border-radius: 30px;
+  color: #000;
+  cursor: pointer;
+}
+
+nav, ul, li {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  list-style: none;
+}
+
+input {
+  padding: 6px;
+  width: 270px;
+  font-size: 16px;
+  border: 1px solid #fff8dc;
+  border-radius: 30px;
+  color: #000;
+  outline: none;
+}
+
+/*# sourceMappingURL=main.css.map */
