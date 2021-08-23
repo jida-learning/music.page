@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
 }
 
 body {
@@ -9,49 +8,74 @@ body {
   background: #b6e3ff;
 }
 body header {
-  padding: 20px 10%;
-  height: 10%;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
   background: #4d82cb;
   width: 100%;
+  box-shadow: 1px 1px 4px 0 rgba(16, 16, 16, 0.72);
+  position: fixed;
+  z-index: 2;
+  line-height: 25px;
 }
-body header nav, body header ul, body header li {
+
+header {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
-  margin: 30px;
+  align-content: space-between;
   list-style: none;
 }
-body header nav a, body header ul a, body header li a {
-  font-weight: 700;
+header .logo {
+  margin-left: 100px;
+  text-decoration: none;
+}
+header .logo .color__title {
+  color: #002f6c;
+}
+header .logo .color__title:hover {
+  border-bottom: 3px solid #005cb2;
+}
+header .text__menu {
+  font-weight: 650;
   font-size: 18px;
   color: #000;
   text-decoration: none;
+  margin-right: 75px;
+}
+header .text__menu:hover {
+  border-bottom: 3px solid #005cb2;
+  color: #005cb2;
 }
 
-input {
-  padding: 6px;
-  width: 270px;
-  font-size: 16px;
-  border: 1px solid #fff8dc;
-  border-radius: 30px;
-  color: #000;
-  outline: none;
-}
-
-.logo {
-  border-radius: 100%;
-  width: 240%;
-  height: auto;
-}
-
-.login > button {
-  padding: 6px;
-  width: 100px;
+button {
+  align-items: center;
+  margin-right: 160px;
   height: 36px;
+  width: 100px;
   font-size: 13px;
   border: 1px solid #4d82cb;
   border-radius: 30px;
   color: #000;
   cursor: pointer;
+}
+button:hover {
+  background: #000;
+  color: #fff8dc;
+  transition: 0.4s ease-out;
+}
+
+header > input {
+  height: 37px;
+  margin-right: 150px;
+  padding: 8px;
+  width: 360px;
+  font-size: 16px;
+  border: 1px solid #fff8dc;
+  border-radius: 30px;
+  color: #000;
+  outline: none;
 }
 
 /*# sourceMappingURL=main.css.map */
