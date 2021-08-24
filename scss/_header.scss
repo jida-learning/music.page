@@ -1,0 +1,30 @@
+header{
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: space-between;
+  list-style: none;
+  background: $secondary-color;
+  box-shadow: 1px 1px 4px 0 rgba(16, 16, 16, 0.72);
+  position: fixed;
+  line-height: 25px;
+  z-index: 2;
+
+  .logo {
+    margin-left: 100px;
+    text-decoration: none;
+
+    h2 {
+      color: #002f6c;
+
+      &:hover {
+        border-bottom: 3px solid $hover-color;
+      }
+    }
+  }
+
+}

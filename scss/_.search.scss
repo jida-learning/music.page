@@ -1,0 +1,32 @@
+.search__area {
+  position: fixed;
+
+  .search__area, input {
+    height: 37px;
+    margin-right: 150px;
+    padding: 8px;
+    width: 0;
+    font-size: 16px;
+    border: 1px solid $border-color;
+    border-radius: 30px;
+    color: $text-primary;
+    outline: none;
+    transition: all 0.6s ease;
+
+    &:hover, &:focus {
+      width: 360px;
+    }
+  }
+}
+
+.search {
+  line-height: 40px;
+  width: 40px;
+  text-align: center;
+  left: 490px;
+  position: absolute;
+  background: $search-background-color;
+  color: $border-color;
+  font-size: 20px;
+  border-radius: 50px;
+}

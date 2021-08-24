@@ -2,16 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Daily</title>
     <link rel="stylesheet" href="css/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/03021e95a3.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <header>
     <a class="logo" href="landing.html">
-        <h2 class="color__title">Music Daily</h2>
+        <h2>Music Daily</h2>
     </a>
-    <input type="text" placeholder="Escríbe el nombre de un artista" required>
+    <div class="search__area">
+        <input type="text" placeholder="Escríbe el nombre de un artista" required>
+    </div>
+    <div class="search">
+        <i class="fas fa-search"></i>
+    </div>
+
     <div class="menu">
 
         <!--                <li><img class="logo" src="logo.jpg" alt="logo"></li>-->
@@ -19,11 +26,12 @@
         <a class="text__menu" href="#">Artistas TOP</a>
         <a class="text__menu" href="#">Comunidad</a>
         <a class="login" href="#">
-            <button>Iniciar Sesión</button>
+            <button class="btn__login">Iniciar Sesión</button>
         </a>
     </div>
-    </ul>
-    </nav>
+    <button class="bar">
+        <i class="fas fa-bars"></i>
+    </button>
 </header>
 </body>
 </html>

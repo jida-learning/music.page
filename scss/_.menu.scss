@@ -1,0 +1,16 @@
+.menu {
+  margin-right: 100px;
+
+  .text__menu {
+    font-weight: 650;
+    font-size: 18px;
+    color: $text-primary;
+    text-decoration: none;
+    margin-right: 75px;
+
+    &:hover, &:active {
+      border-bottom: 3px solid #005cb2;
+      color: #005cb2;
+    }
+  }
+}

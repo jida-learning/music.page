@@ -1,4 +1,7 @@
 @import "variables";
+@import "header";
+@import ".menu";
+@import ".search";
 
 * {
   box-sizing: border-box;
@@ -9,60 +12,10 @@
 body {
   font-family: 'Source Code Pro', monospace;
   background: $prymary-color;
-
-  header {
-    //padding: 20px 10%;
-    height: 60px;
-    align-items: center;
-    justify-content: space-between;
-    background: $secondary-color;
-    width: 100%;
-    box-shadow: 1px 1px 4px 0 rgba(16, 16, 16, 0.72);
-    position: fixed;
-    z-index: 2;
-    line-height: 25px;
-  }
-
 }
 
-header {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  align-content: space-between;
-  list-style: none;
-
-  .logo {
-    margin-left: 100px;
-    text-decoration: none;
-
-    .color__title {
-      color: #002f6c;
-      &:hover {
-        border-bottom: 3px solid #005cb2;
-      }
-    }
-  }
-
-  .text__menu {
-    font-weight: 650;
-    font-size: 18px;
-    color: $text-primary;
-    text-decoration: none;
-    margin-right: 75px;
-
-    &:hover {
-      border-bottom: 3px solid #005cb2;
-      color: #005cb2;
-    }
-  }
-}
-
-button {
+.btn__login {
   align-items: center;
-  //margin: -5px;
-  margin-right: 160px;
   height: 36px;
   width: 100px;
   font-size: 13px;
@@ -78,14 +31,12 @@ button {
   }
 }
 
-header > input {
-  height: 37px;
-  margin-right: 150px;
-  padding: 8px;
-  width: 360px;
-  font-size: 16px;
-  border: 1px solid $border-color;
-  border-radius: 30px;
-  color: $text-primary;
-  outline: none;
+.bar {
+  margin-right: 100px;
+  color: $border-color;
+  background: none;
+  border: none;
+  font-size: 20px;
+  padding: 0 20px;
+  display: none;
 }
