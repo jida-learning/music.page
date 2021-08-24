@@ -1,6 +1,6 @@
 header {
-  margin: 0;
-  padding: 0;
+  top: 0;
+  left: 0;
   height: 60px;
   width: 100%;
   display: flex;
@@ -8,7 +8,7 @@ header {
   justify-content: space-between;
   align-content: space-between;
   list-style: none;
-  background: #4d82cb;
+  background: #0F2027;
   box-shadow: 1px 1px 4px 0 rgba(16, 16, 16, 0.72);
   position: fixed;
   line-height: 25px;
@@ -19,10 +19,11 @@ header .logo {
   text-decoration: none;
 }
 header .logo h2 {
-  color: #002f6c;
+  color: #005cb2;
 }
 header .logo h2:hover {
-  border-bottom: 3px solid #005cb2;
+  color: #fff8dc;
+  transition: all 0.4s ease;
 }
 
 .menu {
@@ -31,23 +32,21 @@ header .logo h2:hover {
 .menu .text__menu {
   font-weight: 650;
   font-size: 18px;
-  color: #000;
+  color: #fff8dc;
   text-decoration: none;
   margin-right: 75px;
 }
 .menu .text__menu:hover, .menu .text__menu:active {
   border-bottom: 3px solid #005cb2;
   color: #005cb2;
+  transition: all 0.1s ease;
 }
 
-.search__area {
-  position: fixed;
-}
-.search__area .search__area, .search__area input {
-  height: 37px;
+input {
+  height: 20px;
   margin-right: 150px;
   padding: 8px;
-  width: 0;
+  width: 338px;
   font-size: 16px;
   border: 1px solid #fff8dc;
   border-radius: 30px;
@@ -55,15 +54,12 @@ header .logo h2:hover {
   outline: none;
   transition: all 0.6s ease;
 }
-.search__area .search__area:hover, .search__area .search__area:focus, .search__area input:hover, .search__area input:focus {
-  width: 360px;
-}
 
 .search {
   line-height: 40px;
   width: 40px;
   text-align: center;
-  left: 490px;
+  left: 654px;
   position: absolute;
   background: #005cb2;
   color: #fff8dc;
@@ -71,14 +67,15 @@ header .logo h2:hover {
   border-radius: 50px;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
 body {
+  box-sizing: border-box;
   font-family: "Source Code Pro", monospace;
-  background: #b6e3ff;
+  background: #0F2027;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .btn__login {
@@ -86,7 +83,7 @@ body {
   height: 36px;
   width: 100px;
   font-size: 13px;
-  border: 1px solid #4d82cb;
+  border: 0;
   border-radius: 30px;
   color: #000;
   cursor: pointer;
@@ -94,7 +91,7 @@ body {
 .btn__login:hover {
   background: #000;
   color: #fff8dc;
-  transition: 0.4s ease-out;
+  transition: 0.3s ease;
 }
 
 .bar {

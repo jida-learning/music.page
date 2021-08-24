@@ -1,0 +1,68 @@
+.forms {
+    display: block;
+    margin: auto;
+    background: $primary-color;
+    padding: 46px;
+    border-radius: 10px;
+    color: $text-on-primary;
+    box-shadow: 7px 8px 17px #000;
+  }
+
+  .back {
+    text-decoration: none;
+    display: flex;
+
+    &:hover, &:active {
+      color: $second-color;
+    }
+  }
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  //animation: bouncein;
+  //animation-duration: 2s;
+}
+
+.controls {
+  width: 90%;
+  color: #fff;
+  background: $primary-color;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 2px solid $second-color;
+  font-size: 20px;
+}
+
+p {
+  text-align: center;
+  font-size: 22px;
+}
+
+a {
+  color: $text-on-primary;
+  text-decoration: none;
+
+  &:hover, &:active {
+    background: $text-on-primary;
+    text-decoration: underline;
+  }
+}
+
+.btn {
+  width: 90%;
+  background: $second-color;
+  border: 1px solid $second-color;
+  cursor: pointer;
+  padding: 11px;
+  color: $text-on-primary;
+  margin: 16px;
+  font-size: 18px;
+  transition: 250ms linear;
+  box-shadow: 3px 4px 7px #000;
+
+  &:hover, &:active {
+    background: rgba(12, 79, 8, 0.93);
+  }
+}

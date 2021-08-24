@@ -1,6 +1,6 @@
 header{
-  margin: 0;
-  padding: 0;
+  top: 0;
+  left: 0;
   height: 60px;
   width: 100%;
   display: flex;
@@ -8,7 +8,8 @@ header{
   justify-content: space-between;
   align-content: space-between;
   list-style: none;
-  background: $secondary-color;
+  //background: $secondary-color;
+  background: #0F2027;
   box-shadow: 1px 1px 4px 0 rgba(16, 16, 16, 0.72);
   position: fixed;
   line-height: 25px;
@@ -19,10 +20,11 @@ header{
     text-decoration: none;
 
     h2 {
-      color: #002f6c;
+      color: #005cb2;
 
       &:hover {
-        border-bottom: 3px solid $hover-color;
+        color: $border-color;
+        transition: all 0.4s ease;
       }
     }
   }

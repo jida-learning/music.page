@@ -4,13 +4,15 @@
   .text__menu {
     font-weight: 650;
     font-size: 18px;
-    color: $text-primary;
+    //color: $text-primary;
+    color: $border-color;
     text-decoration: none;
     margin-right: 75px;
 
     &:hover, &:active {
       border-bottom: 3px solid #005cb2;
       color: #005cb2;
+      transition: all 0.1s ease;;
     }
   }
 }
