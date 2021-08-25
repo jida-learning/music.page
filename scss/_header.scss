@@ -18,12 +18,19 @@ header{
   .logo {
     margin-left: 100px;
     text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 
     h2 {
       color: #005cb2;
+      background: linear-gradient(#3a7bd5, #3a6073);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
 
       &:hover {
-        color: $border-color;
+        background: linear-gradient(#83a4d4 40%, #b6fbff);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
         transition: all 0.4s ease;
       }
     }
