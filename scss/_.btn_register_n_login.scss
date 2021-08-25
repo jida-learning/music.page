@@ -1,0 +1,59 @@
+.btn__register > .register {
+  height: 100%;
+  width: 100%;
+  align-content: center;
+  display: inline-block;
+  background: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px black;
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  border: 0;
+  margin-top: 10%;
+  /* margin-left: 70px; */
+  letter-spacing: 4px;
+  cursor: pointer;
+
+  &:hover {
+    transition: all 0.3s ease;
+    background: #ff5722;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #ff5722,
+    0 0 15px #ff5722,
+    0 0 30px #ff5722,
+    0 0 100px #ff5722;
+  }
+}
+
+.btn__login > .login {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  background: none;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px black;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  border: 0;
+  margin-top: 10%;
+  letter-spacing: 4px;
+  cursor: pointer;
+
+  &:hover {
+    transition: all 0.3s ease;
+    background: #03e9f4;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #03e9f4,
+    0 0 15px #03e9f4,
+    0 0 30px #03e9f4,
+    0 0 100px #03e9f4;
+  }
+}

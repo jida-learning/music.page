@@ -2,12 +2,11 @@
 @import "header";
 @import ".menu";
 @import ".search";
+@import "login";
 
-//* {
-//  box-sizing: border-box;
-//  //margin: 0;
-//  //padding: 0;
-//}
+* {
+  box-sizing: border-box;
+}
 
 body {
   box-sizing: border-box;
@@ -16,6 +15,7 @@ body {
   background: #0F2027; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .btn__login {
@@ -25,11 +25,11 @@ body {
   font-size: 13px;
   border: 0;
   border-radius: 30px;
-  color: $text-primary;
+  color: $black-color;
   cursor: pointer;
 
   &:hover {
-    background: $text-primary;
+    background: $black-color;
     color: $border-color;
     transition: 0.3s ease;
   }

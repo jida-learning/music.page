@@ -1,17 +1,61 @@
-/* Error: Undefined variable.
- *   ,
- * 2 |   background: $primary-color;
- *   |               ^^^^^^^^^^^^^^
- *   '
- *   login.scss 2:15  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 2 \2502    background: $primary-color;\d\a   \2502                ^^^^^^^^^^^^^^\a   \2575 \a   login.scss 2:15  root stylesheet";
+.forms {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
 }
+.forms .animate__animated {
+  margin-bottom: 30px;
+  color: #fff8dc;
+  text-align: center;
+}
+
+.back {
+  text-decoration: none;
+  display: flex;
+}
+.controls {
+  width: 90%;
+  color: #fff8dc;
+  background: #b6e3ff;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 2px solid #4d82cb;
+  font-size: 20px;
+}
+
+p {
+  text-align: center;
+  font-size: 22px;
+}
+
+a {
+  color: #fff8dc;
+  text-decoration: none;
+}
+a:hover, a:active {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 90%;
+  cursor: pointer;
+  padding: 11px;
+  color: #fff8dc;
+  margin: 16px;
+  font-size: 18px;
+  transition: 250ms linear;
+  box-shadow: 3px 4px 7px #000;
+}
+.btn:hover, .btn:active {
+  background: rgba(12, 79, 8, 0.93);
+}
+
+/*# sourceMappingURL=login.css.map */
