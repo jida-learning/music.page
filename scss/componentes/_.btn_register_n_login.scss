@@ -3,10 +3,10 @@
   width: 100%;
   align-content: center;
   display: inline-block;
-  background: #fff;
+  background: $white-color;
   padding: 10px 20px;
-  box-shadow: 0 2px 4px black;
-  color: #000;
+  box-shadow: 0 2px 4px $black-color;
+  color: $black-color;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -20,12 +20,12 @@
 
   &:hover {
     transition: all 0.3s ease;
-    background: #ff5722;
+    background: $orange-color;
     border-radius: 10px;
-    box-shadow: 0 0 6px #ff5722,
-    0 0 15px #ff5722,
-    0 0 30px #ff5722,
-    0 0 100px #ff5722;
+    box-shadow: 0 0 6px $orange-color,
+    0 0 15px $orange-color,
+    0 0 30px $orange-color,
+    0 0 100px $orange-color;
   }
 }
 
@@ -35,8 +35,8 @@
   display: inline-block;
   background: none;
   padding: 10px 20px;
-  box-shadow: 0 2px 4px black;
-  color: #fff;
+  box-shadow: 0 2px 4px $black-color;
+  color: $white-color;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -49,11 +49,11 @@
 
   &:hover {
     transition: all 0.3s ease;
-    background: #03e9f4;
+    background: $cyan-color;
     border-radius: 10px;
-    box-shadow: 0 0 6px #03e9f4,
-    0 0 15px #03e9f4,
-    0 0 30px #03e9f4,
-    0 0 100px #03e9f4;
+    box-shadow: 0 0 6px $cyan-color,
+    0 0 15px $cyan-color,
+    0 0 30px $cyan-color,
+    0 0 100px $cyan-color;
   }
 }

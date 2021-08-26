@@ -10,8 +10,8 @@
     margin-right: 75px;
 
     &:hover, &:active {
-      border-bottom: 3px solid #005cb2;
-      color: #005cb2;
+      border-bottom: 3px solid $hover-color;
+      color: $hover-color;
       transition: all 0.1s ease;;
     }
   }

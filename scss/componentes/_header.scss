@@ -22,7 +22,7 @@ header{
     letter-spacing: 2px;
 
     h2 {
-      color: #005cb2;
+      color: $hover-color;
       background: linear-gradient(#3a7bd5, #3a6073);
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
