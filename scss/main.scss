@@ -5,6 +5,8 @@
 @import "componentes/login";
 @import "componentes/loader";
 @import "componentes/content.landing";
+@import "componentes/gallery";
+@import "componentes/.phrase";
 
 * {
   box-sizing: border-box;
@@ -15,7 +17,7 @@ body {
   box-sizing: border-box;
   font-family: 'Source Code Pro', monospace;
   //background-color: $prymary-color;
-  background: #0F2027; /* fallback for old browsers */
+  background: $background-header; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   overflow: auto;
@@ -32,9 +34,15 @@ body {
   cursor: pointer;
 
   &:hover {
-    background: $black-color;
+    background: $dark-blue-gray;
     color: $border-color;
     transition: 0.3s ease;
+
+    &:active {
+      background: $black-color;
+      color: $border-color;
+      transition: 0.3s ease;
+    }
   }
 }
 

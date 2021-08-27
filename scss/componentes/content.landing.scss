@@ -1,8 +1,12 @@
 .title__section {
-  color: $black-color;
+  background: linear-gradient(#525252, #3d72b4 60%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   font-size: 65px;
   margin: 160px 60px 60px;
-  font-weight: 600;
+  padding: 10px;
+  font-weight: bold;
+  letter-spacing: 5px;
   text-align: center;
 
   .roles {
@@ -12,23 +16,10 @@
   }
 }
 
-
-
 .role__container {
-  //display: inline-block;
-  //background: $secondary-color;
-  //color: $hover-color;
-  //width: 60px;
-  //height: 60px;
-  //margin-right: 16px;
-  //float: left;
-  //text-align: center;
-  //line-height: 60px;
-  //border-radius: 50px;
-
-  float: right;
-  background: #4d82cb;
-  color: #000;
+  float: left;
+  background: $secondary-color;
+  color: $black-color;
   width: 60px;
   text-align: center;
   line-height: 60px;
@@ -36,25 +27,29 @@
 }
 
 .role__text {
-  width: 220px;
-  justify-content: center;
-  margin-right: 10%;
-  display: flow-root;
+  color: $black-color;
+  width: 330px;
+  font-size: 18px;
+  text-align: center;
+  margin-right: 11%;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* align-content: space-between; */
+  /* display: flex; */
   float: right;
-
-  //width: 220px;
-  //margin-left: 750px;
-  //display: inline-block;
 }
 
 
 .title__small {
   margin-bottom: 8px;
-  color: $hover-color;
+  color: $light-blue;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .text-block-15 {
   color: $black-color;
+  display: flex;
+  padding: 5px 10px;
+  justify-content: space-between;
 }

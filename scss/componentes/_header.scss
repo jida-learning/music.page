@@ -8,9 +8,8 @@ header{
   justify-content: space-between;
   align-content: space-between;
   list-style: none;
-  //background: $secondary-color;
-  background: #0F2027;
-  box-shadow: 1px 1px 4px 0 rgba(16, 16, 16, 0.72);
+  background: $background-header;
+  box-shadow: 1px 1px 4px 0 $light-shadow;
   position: fixed;
   line-height: 25px;
   z-index: 2;
