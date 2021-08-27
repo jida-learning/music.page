@@ -14,7 +14,7 @@
 
   .animate__animated {
     margin-bottom: 30px;
-    color: $border-color;
+    color: $beige-color;
     text-align: center;
     background: linear-gradient(#005aa7 40%, #fffde4);
     -webkit-text-fill-color: transparent;
@@ -43,11 +43,11 @@
 
   &:active, &:focus {
     transition: all 0.3s ease;
-    border: 2px solid #512DA8;
-    box-shadow: 0 0 1px #512DA8,
-    0 0 5px #512DA8,
-    0 0 10px #512DA8,
-    0 0 15px #512DA8;
+    border: 2px solid $purple-color;
+    box-shadow: 0 0 1px $purple-color,
+    0 0 5px $purple-color,
+    0 0 10px $purple-color,
+    0 0 15px $purple-color;
   }
 }
 
@@ -56,32 +56,39 @@
   font-size: 20px;
   display: block;
   margin-top: 20px;
-  color: #fff8dc;
+  color: $beige-color;
   text-decoration: none;
 
-  &:hover, &:active {
+  &:hover {
     border-bottom: 3px solid $hover-color;
     color: $hover-color;
-    transition: all 0.2s ease;
+    transition: all 0.1s ease;
+
+    &:active {
+      border-bottom: 3px solid $dark-blue;
+      color: $dark-blue;
+      transition: all 0.1s ease;
+    }
+  }
+
+  .back__btn {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 41px;
+    background: none;
+    bottom: 25px;
+    right: 20px;
+    text-align: center;
+    color: $white-color;
+    font-size: 20px;
+
+    &:active {
+      background: $hover-color;
+      transition: all 0.3ms ease;
+      border-radius: 50px;
+    }
   }
 }
 
-.back__btn {
-  position: relative;
-  display: block;
-  width: 40px;
-  height: 40px;
-  line-height: 41px;
-  background: none;
-  bottom: 25px;
-  right: 20px;
-  text-align: center;
-  color: $white-color;
-  font-size: 20px;
-
-  &:active {
-    background: $hover-color;
-    transition: all 0.3ms ease;
-    border-radius: 50px;
-  }
-}

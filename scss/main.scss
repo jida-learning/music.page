@@ -6,7 +6,7 @@
 @import "componentes/loader";
 @import "componentes/content.landing";
 @import "componentes/gallery";
-@import "componentes/.phrase";
+@import "componentes/.playlist-logos";
 
 * {
   box-sizing: border-box;
@@ -35,12 +35,12 @@ body {
 
   &:hover {
     background: $dark-blue-gray;
-    color: $border-color;
+    color: $beige-color;
     transition: 0.3s ease;
 
     &:active {
       background: $black-color;
-      color: $border-color;
+      color: $beige-color;
       transition: 0.3s ease;
     }
   }
@@ -48,7 +48,7 @@ body {
 
 .bar {
   margin-right: 100px;
-  color: $border-color;
+  color: $beige-color;
   background: none;
   border: none;
   font-size: 20px;
