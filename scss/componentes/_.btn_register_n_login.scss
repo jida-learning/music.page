@@ -1,4 +1,8 @@
-.btn__register > .register {
+@mixin gradient($color) {
+  box-shadow: 0 0 6px $color, 0 0 15px $color, 0 0 30px $color, 0 0 100px $color;
+}
+
+.link__button {
   height: 100%;
   width: 100%;
   align-content: center;
@@ -22,38 +26,18 @@
     transition: all 0.3s ease;
     background: $orange-color;
     border-radius: 10px;
-    box-shadow: 0 0 6px $orange-color,
-    0 0 15px $orange-color,
-    0 0 30px $orange-color,
-    0 0 100px $orange-color;
+    @include gradient($orange-color);
+
+  }
+
+  &--blue {
+    &:hover {
+      transition: all 0.3s ease;
+      background: $cyan-color;
+      border-radius: 10px;
+      @include gradient($cyan-color);
+    }
   }
 }
 
-.btn__login > .login {
-  height: 100%;
-  width: 100%;
-  display: inline-block;
-  background: none;
-  padding: 10px 20px;
-  box-shadow: 0 2px 4px $black-color;
-  color: $white-color;
-  font-size: 16px;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
-  transition: 0.5s;
-  border: 0;
-  margin-top: 10%;
-  letter-spacing: 4px;
-  cursor: pointer;
 
-  &:hover {
-    transition: all 0.3s ease;
-    background: $cyan-color;
-    border-radius: 10px;
-    box-shadow: 0 0 6px $cyan-color,
-    0 0 15px $cyan-color,
-    0 0 30px $cyan-color,
-    0 0 100px $cyan-color;
-  }
-}

@@ -60,12 +60,12 @@ body {
   position: fixed;
   width: 50px;
   height: 50px;
-  background: $hover-color;
   bottom: 40px;
   right: 50px;
+  background: $hover-color;
   text-decoration: none;
   text-align: center;
-  line-height: 50px;
   color: $white-color;
   font-size: 20px;
+  line-height: 50px;
 }
