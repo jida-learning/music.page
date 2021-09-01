@@ -1,3 +1,4 @@
+@import "mixins";
 @import "variables";
 @import "componentes/header";
 @import "componentes/.menu";
@@ -16,56 +17,49 @@
 body {
   box-sizing: border-box;
   font-family: 'Source Code Pro', monospace;
-  //background-color: $prymary-color;
-  background: $background-header; /* fallback for old browsers */
+  background: $secondary-color-dark; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   overflow: auto;
 }
 
 .btn__login {
-  align-items: center;
-  height: 36px;
-  width: 100px;
-  font-size: 13px;
-  border: 0;
-  border-radius: 30px;
-  color: $black-color;
-  cursor: pointer;
+  @include default-btn($secondary-color);
 
   &:hover {
-    background: $dark-blue-gray;
-    color: $beige-color;
     transition: 0.3s ease;
+    background: $dark-blue-gray;
+    color: $primary-text-color;
 
     &:active {
-      background: $black-color;
-      color: $beige-color;
       transition: 0.3s ease;
+      background: $secondary-color;
+      color: $primary-text-color;
     }
   }
 }
 
 .bar {
   margin-right: 100px;
-  color: $beige-color;
-  background: none;
-  border: none;
   font-size: 20px;
   padding: 0 20px;
+  background: none;
+  border: none;
   display: none;
+  color: $primary-text-color;
 }
 
 .top__btn {
   position: fixed;
   width: 50px;
   height: 50px;
-  bottom: 40px;
+  line-height: 50px;
+  border-radius: 50px;
   right: 50px;
-  background: $hover-color;
+  bottom: 40px;
+  font-size: 20px;
   text-decoration: none;
   text-align: center;
-  color: $white-color;
-  font-size: 20px;
-  line-height: 50px;
+  background: $primary-color;
+  color: $secondary-text-color;
 }

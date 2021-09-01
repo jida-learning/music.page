@@ -1,43 +1,22 @@
-@mixin gradient($color) {
-  box-shadow: 0 0 6px $color, 0 0 15px $color, 0 0 30px $color, 0 0 100px $color;
-}
-
 .link__button {
-  height: 100%;
-  width: 100%;
-  align-content: center;
-  display: inline-block;
-  background: $white-color;
-  padding: 10px 20px;
-  box-shadow: 0 2px 4px $black-color;
-  color: $black-color;
-  font-size: 16px;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
-  transition: 0.5s;
-  border: 0;
-  margin-top: 10%;
-  /* margin-left: 70px; */
-  letter-spacing: 4px;
-  cursor: pointer;
+  @include pri-and-secondary-btn;
 
   &:hover {
     transition: all 0.3s ease;
-    background: $orange-color;
+    background: $primary-accent-color;
     border-radius: 10px;
-    @include gradient($orange-color);
-
+    @include gradient($primary-accent-color);
   }
 
   &--blue {
     &:hover {
       transition: all 0.3s ease;
-      background: $cyan-color;
+      background: $secondary-accent-color;
       border-radius: 10px;
-      @include gradient($cyan-color);
+      @include gradient($secondary-accent-color);
     }
   }
 }
+
 
 

@@ -4,20 +4,20 @@
   .text__menu {
     font-weight: 650;
     font-size: 18px;
-    //color: $text-primary;
-    color: $beige-color;
-    text-decoration: none;
     margin-right: 75px;
+    text-decoration: none;
+    color: $primary-text-color;
+    //color: $text-primary;
 
     &:hover {
-      border-bottom: 3px solid $hover-color;
-      color: $hover-color;
       transition: all 0.1s ease;
+      border-bottom: 3px solid $primary-color;
+      color: $primary-color;
 
       &:active {
-        border-bottom: 3px solid $dark-blue;
-        color: $dark-blue;
         transition: all 0.1s ease;
+        border-bottom: 3px solid $primary-color-dark;
+        color: $primary-color-dark;
       }
     }
   }

@@ -1,18 +1,18 @@
 header{
-  top: 0;
-  left: 0;
-  height: 60px;
-  width: 100%;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
   align-content: space-between;
-  list-style: none;
-  background: $background-header;
-  box-shadow: 1px 1px 4px 0 $light-shadow;
-  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
   line-height: 25px;
   z-index: 2;
+  box-shadow: 1px 1px 4px 0 $shadow-color;
+  list-style: none;
+  background: $secondary-color-dark;
 
   .logo {
     margin-left: 100px;
@@ -21,7 +21,7 @@ header{
     letter-spacing: 2px;
 
     h2 {
-      color: $hover-color;
+      color: $primary-color;
       background: linear-gradient(#3a7bd5, #3a6073);
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;

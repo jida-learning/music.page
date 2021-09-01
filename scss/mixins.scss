@@ -1,0 +1,35 @@
+@mixin gradient($color) {
+  box-shadow: 0 0 6px $color, 0 0 15px $color, 0 0 30px $color, 0 0 100px $color;
+}
+
+@mixin pri-and-secondary-btn {
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+  border: 0;
+  margin-top: 10%;
+  padding: 10px 20px;
+  font-size: 16px;
+  letter-spacing: 4px;
+  box-shadow: 0 2px 4px $secondary-color;
+  align-content: center;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+  background: $secondary-text-color;
+  color: $secondary-color;
+  /* margin-left: 70px; */
+}
+
+@mixin default-btn($color) {
+  align-items: center;
+  height: 36px;
+  width: 100px;
+  font-size: 13px;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  color: $color;
+}
