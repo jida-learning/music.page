@@ -1,13 +1,15 @@
-header{
-  position: fixed;
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 6.5%;
+
   display: flex;
+  gap: 30px;
+
   align-items: center;
   justify-content: space-between;
   align-content: space-between;
-  top: 0;
-  left: 0;
-  height: 6.5%;
-  width: 100%;
   padding: 20px 30px;
   line-height: 25px;
   z-index: 2;
@@ -16,7 +18,7 @@ header{
   background: $secondary-color-dark;
 
   .logo {
-    margin-left: 100px;
+
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -32,6 +34,20 @@ header{
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         transition: all 0.4s ease;
+      }
+    }
+  }
+
+  .btn__login {
+    display: flex;
+
+    span {
+      display: none;
+    }
+
+    @media (min-width: 800px) {
+      span {
+        display: flex;
       }
     }
   }

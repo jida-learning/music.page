@@ -1,5 +1,4 @@
 .menu {
-  margin-right: 100px;
 
   .text__menu {
     font-weight: 650;
@@ -19,6 +18,12 @@
         border-bottom: 3px solid $primary-color-dark;
         color: $primary-color-dark;
       }
+    }
+  }
+
+  @media (max-width: 800px) {
+    .text__menu {
+      font-size: 15px;
     }
   }
 }
