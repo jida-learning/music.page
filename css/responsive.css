@@ -1,3 +1,19 @@
-
+@media screen and (max-width: 970px) {
+  #main-container {
+    width: 100%;
+  }
+  #main-container header, #main-container .logo, #main-container .search__container, #main-container .menu, #main-container .bar {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header, .logo, .search__container, .menu, .bar {
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+}
 
 /*# sourceMappingURL=responsive.css.map */

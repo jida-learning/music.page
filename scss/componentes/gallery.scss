@@ -1,10 +1,11 @@
 .gallery__list {
   display: flex;
-  position: absolute;
+  position: relative;
   justify-content: center;
   list-style: none;
-  left: 22%;
-  top: 55%;
+  left: 340px;
+  top: 50px;
+  width: 60%;
 }
 
 .gallery__list li {

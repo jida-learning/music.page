@@ -19,6 +19,7 @@
 .role__container {
   float: left;
   width: 60px;
+  margin: 5%;
   line-height: 60px;
   border-radius: 50px;
   text-align: center;
@@ -28,7 +29,8 @@
 
 .role__text {
   float: right;
-  width: 330px;
+  width: 20%;
+  padding: 10px 0;
   font-size: 18px;
   margin-right: 11%;
   color: $secondary-color;
@@ -41,6 +43,7 @@
 
 
 .title__small {
+  width: 100%;
   margin-bottom: 8px;
   font-size: 20px;
   font-weight: 600;

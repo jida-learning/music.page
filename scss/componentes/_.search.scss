@@ -2,6 +2,7 @@
   //display: flex;
   position: relative;
   margin-right: 15%;
+  width: 7%;
   //left: 654px;
 
   .search__form {
@@ -9,7 +10,7 @@
     top: 4px;
     height: 34px;
     padding: 0 17px;
-    width: 330px;
+    width: 315%;
     font-size: 16px;
     border-radius: 30px;
     outline: none;
@@ -23,13 +24,13 @@
     align-items: center;
     border: none;
     cursor: pointer;
-    height: auto;
+    //height: auto;
     border-radius: 50px;
     line-height: 40px;
     margin: 0 30px;
-    width: 45px;
+    width: 45%;
     font-size: 20px;
-    left: 260px;
+    left: 250%;
     background: $primary-color;
     color: $primary-text-color;
   }

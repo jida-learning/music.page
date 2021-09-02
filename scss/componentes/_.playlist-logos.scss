@@ -7,16 +7,17 @@
   font-weight: 600;
   text-align: center;
   display: flex;
-  left: 39%;
+  left: 610px;
   position: absolute;
   align-content: space-between;
-  top: 100%;
+  top: 900px;
 }
 
 .logos__stream--container {
   display: flex;
   height: 100px;
-  margin-top: 45%;
+  width: 100%;
+  margin-top: 20%;
 
   .block__container {
     align-content: space-between;

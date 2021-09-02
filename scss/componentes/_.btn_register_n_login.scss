@@ -8,7 +8,7 @@
     @include gradient($primary-accent-color);
   }
 
-  &--blue {
+  &--orange {
     &:hover {
       transition: all 0.3s ease;
       background: $secondary-accent-color;

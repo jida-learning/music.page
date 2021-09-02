@@ -63,3 +63,6 @@ body {
   background: $primary-color;
   color: $secondary-text-color;
 }
+#main-container {
+  min-width: 375px;
+}
