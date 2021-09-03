@@ -1,16 +1,15 @@
 .search__container {
-  //display: flex;
   position: relative;
-  margin-right: 15%;
-  width: 7%;
-  //left: 654px;
+  display: flex;
+
+  right: 130px;
 
   .search__form {
     position: absolute;
     top: 4px;
     height: 34px;
     padding: 0 17px;
-    width: 310%;
+    width: 310px;
     font-size: 16px;
     border-radius: 30px;
     outline: none;
@@ -30,7 +29,7 @@
     width: 45px;
     height: 45px;
     font-size: 20px;
-    left: 250%;
+    left: 250px;
     background: $primary-color;
     color: $primary-text-color;
   }

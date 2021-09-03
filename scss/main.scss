@@ -1,6 +1,5 @@
 @import "mixins";
 @import "variables";
-//@import "componentes/header";
 @import "componentes/.menu";
 @import "componentes/.search";
 @import "componentes/login";
@@ -8,6 +7,7 @@
 @import "componentes/content.landing";
 @import "componentes/gallery";
 @import "componentes/.playlist-logos";
+@import "responsive";
 
 * {
   box-sizing: border-box;

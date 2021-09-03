@@ -1,11 +1,9 @@
 .gallery__list {
   display: flex;
-  position: relative;
+  flex-wrap: wrap;
   justify-content: center;
   list-style: none;
-  left: 340px;
-  top: 50px;
-  width: 60%;
+  width: 100%;
 }
 
 .gallery__list li {
@@ -16,7 +14,7 @@
   width: 330px;
   height: 250px;
   font-size: 18px;
-  margin-right: 11%;
+  margin: 30px;
   color: $secondary-color;
 
   figure {

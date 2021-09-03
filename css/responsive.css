@@ -1,19 +1,17 @@
-@media screen and (max-width: 970px) {
-  #main-container {
-    width: 100%;
-  }
-  #main-container header, #main-container .logo, #main-container .search__container, #main-container .menu, #main-container .bar {
-    padding: 10px;
-  }
-}
-@media screen and (max-width: 600px) {
-  header, .logo, .search__container, .menu, .bar {
-    justify-content: space-between;
-    align-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0;
-  }
-}
+/* Error: Undefined variable.
+ *    ,
+ * 28 |     background: $shadow-color;
+ *    |                 ^^^^^^^^^^^^^
+ *    '
+ *   responsive.scss 28:17  root stylesheet */
 
-/*# sourceMappingURL=responsive.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 28 \2502      background: $shadow-color;\d\a    \2502                  ^^^^^^^^^^^^^\a    \2575 \a   responsive.scss 28:17  root stylesheet";
+}
