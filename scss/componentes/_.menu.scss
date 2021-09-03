@@ -1,29 +1,95 @@
 .menu {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  top: 0;
+  left: 0;
+  height: 75px;
+  width: 100%;
+  box-shadow: 1px 1px 4px 0 $shadow-color;
+  background: $secondary-color-dark;
+  z-index: 2;
 
   .text__menu {
-    font-weight: 650;
+    padding: 7px 13px;
     font-size: 18px;
-    margin-right: 75px;
     text-decoration: none;
     color: $primary-text-color;
-    //color: $text-primary;
+    font-weight: bold;
+    text-transform: uppercase;
+
 
     &:hover {
-      transition: all 0.1s ease;
-      border-bottom: 3px solid $primary-color;
+      background: $shadow-color;
+      border: 1px solid $primary-color;
       color: $primary-color;
+      transition: all 0.1s ease;
 
       &:active {
-        transition: all 0.1s ease;
         border-bottom: 3px solid $primary-color-dark;
         color: $primary-color-dark;
+        transition: all 0.1s ease;
       }
     }
   }
+
 
   @media (max-width: 800px) {
     .text__menu {
       font-size: 15px;
     }
   }
+}
+
+.logo {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0 50px;
+  letter-spacing: 2px;
+
+
+  h2 {
+    color: $primary-color;
+    background: linear-gradient(#3a7bd5, #3a6073);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+    &:hover {
+      background: linear-gradient(#83a4d4 40%, #b6fbff);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      transition: all 0.4s ease;
+    }
+  }
+}
+
+.btn__login {
+  @include default-btn($secondary-color);
+
+  &:hover {
+    transition: 0.3s ease;
+    background: $dark-blue-gray;
+    color: $primary-text-color;
+
+    &:active {
+      transition: 0.3s ease;
+      background: $secondary-color;
+      color: $primary-text-color;
+    }
+  }
+}
+.bar__menu {
+  display: none;
+  margin-right: 30px;
+  font-size: 25px;
+  cursor: pointer;
+  color: $primary-color;
+}
+
+ul .show{
+  top: 65px;
 }

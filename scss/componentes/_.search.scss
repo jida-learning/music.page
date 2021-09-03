@@ -10,7 +10,7 @@
     top: 4px;
     height: 34px;
     padding: 0 17px;
-    width: 315%;
+    width: 310%;
     font-size: 16px;
     border-radius: 30px;
     outline: none;
@@ -21,14 +21,14 @@
 
   .search__logo {
     position: relative;
+    padding: 8px 10px;
     align-items: center;
     border: none;
     cursor: pointer;
-    //height: auto;
-    border-radius: 50px;
-    line-height: 40px;
+    border-radius: 50%;
     margin: 0 30px;
-    width: 45%;
+    width: 45px;
+    height: 45px;
     font-size: 20px;
     left: 250%;
     background: $primary-color;
