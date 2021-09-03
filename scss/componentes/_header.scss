@@ -1,8 +1,9 @@
 header {
   position: sticky;
   top: 0;
+  left: 0;
   width: 100%;
-  height: 6.5%;
+  height: 60px;
 
   display: flex;
   gap: 30px;
@@ -39,17 +40,29 @@ header {
   }
 
   .btn__login {
-    display: flex;
+    @include default-btn($secondary-color);
 
-    span {
-      display: none;
-    }
+    &:hover {
+      transition: 0.3s ease;
+      background: $dark-blue-gray;
+      color: $primary-text-color;
 
-    @media (min-width: 800px) {
-      span {
-        display: flex;
+      &:active {
+        transition: 0.3s ease;
+        background: $secondary-color;
+        color: $primary-text-color;
       }
     }
   }
 
+  span {
+    display: none;
+  }
+
+  @media (min-width: 800px) {
+    span {
+      display: flex;
+    }
+  }
 }
+
