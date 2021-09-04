@@ -1,6 +1,6 @@
-.container__p {
+main {
 
-  .title__section {
+  .main__title {
     margin: 160px 60px 60px;
     padding: 10px;
     font-size: 3rem;
@@ -60,7 +60,7 @@
   }
 
   @media (max-width: 600px) {
-    .title__section {
+    .main__title {
       font-size: 30px;
     }
   }
