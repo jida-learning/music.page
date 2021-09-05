@@ -1,41 +1,19 @@
 @import "mixins";
 @import "variables";
-@import "componentes/.menu";
-@import "componentes/.search";
+@import "componentes/body";
+@import "componentes/header";
+@import "componentes/search";
+@import "componentes/main";
+@import "componentes/gallery";
+@import "componentes/features-section";
+
+@import "componentes/playlist-logos";
 @import "componentes/login";
 @import "componentes/loader";
-@import "componentes/content.landing";
-@import "componentes/gallery";
-@import "componentes/.playlist-logos";
 @import "responsive";
-@import "componentes/features-section";
 
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
-body {
-  box-sizing: border-box;
-  font-family: 'Source Code Pro', monospace;
-  background: $secondary-color-dark; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  overflow: auto;
-
-}
-
-.top__btn {
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 50px;
-  right: 50px;
-  bottom: 40px;
-  font-size: 20px;
-  text-decoration: none;
-  text-align: center;
-  background: $primary-color;
-  color: $secondary-text-color;
-}

@@ -1,140 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Daily</title>
+    <meta charset="UTF-8">
+    <title>Music News</title>
     <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/03021e95a3.js" crossorigin="anonymous"></script>
 </head>
-<body class="back-row-toggle splat-toggle">
-<header class="menu">
-    <a class="logo" id="main-logo" href="index.html">
-        <h2>Music Daily</h2>
+<body>
+<header class="menu__container">
+    <a href="#" class="menu__logo">
+        <h1>Music News</h1>
     </a>
-    <div class="search__container">
-        <form>
-            <input class="search__form" type="text" placeholder="Escríbe el nombre de un artista" required>
-            <button class="search__logo" type="submit">
-                <i class="fas fa-search"></i>
-            </button>
-        </form>
-    </div>
-    <nav class="menu__items">
-        <a class="text__menu" href="#">Novedades</a>
-        <a class="text__menu" href="#">Artistas TOP</a>
-        <a class="text__menu" href="#">Comunidad</a>
-        <a class="text__menu" href="#">Acerca de</a>
-        <a class="text__menu" href="#">Contacto</a>
-        <a class="login" href="login.html">
-            <button class="btn__login">
-                <span>Iniciar Sesión</span>
-            </button>
+    <form class="search__container" id="form" name="form">
+        <input type="text" class="form__search" id="search-bar" name="search-bar"
+               placeholder="Escribe el nombre de un artista" required>
+        <button class="form__logo">
+            <i class="fas fa-search"></i>
+        </button>
+    </form>
+    <nav class="menu__features">
+        <a href="#" class="menu__items">Novedades</a>
+        <a href="#" class="menu__items">Comunidad</a>
+        <a href="#" class="menu__items">Acerca de</a>
+        <a href="#" class="menu__items">Contactanos</a>
+        <a href="#" class="menu__items">Ayuda</a>
+        <a href="login.html" class="menu__btn">
+            <button class="menu__btn--login">Iniciar Sesion</button>
         </a>
     </nav>
-    <span class="bar__menu">
+    <span class="menu__bar">
             <i class="fas fa-bars"></i>
         </span>
 </header>
-
-<a class="top__btn" href="#">
-    <i class="fas fa-chevron-up"></i>
-</a>
-
 <main>
-    <div class="gradient__border">
-        <p class="main__title">
-            Following the journey of music around the world
-        </p>
-    </div>
-
-
+    <p class="main__title">
+        Following the journey of music around the world
+    </p>
     <section class="features__container">
         <article class="feature__item">
             <header>
                 <i class="far fa-handshake"></i>
-                <h3>For Partners</h3>
+                <h2>For Partners</h2>
             </header>
-            <div class="feature__detail">All you need to take your service to the next level.</div>
+            <p>All you need to take your service to the next level.</p>
         </article>
         <article class="feature__item">
             <header>
-                <i class="far fa-handshake"></i>
-                <h3>For Partners</h3>
+                <i class="fas fa-hand-holding-usd"></i>
+                <h2>For Publishers</h2>
             </header>
-            <div class="feature__detail">All you need to take your service to the next level.</div>
+            <p>Distribute real news and receive royalties.</p>
         </article>
         <article class="feature__item">
             <header>
-                <i class="far fa-handshake"></i>
-                <h3>For Partners</h3>
+                <i class="fas fa-users"></i>
+                <h2>For community</h2>
             </header>
-            <div class="feature__detail">All you need to take your service to the next level.</div>
+            <p>Get the news about your favorite artists.</p>
         </article>
+        <ul class="feature__item gallery__list zoomIn">
+            <li>
+                <figure><img
+                        src="https://cdn.thebeat.online/art/61/61/67/ab/ab6761610000e5eb3c60723b9aae00d037d4f0ed.jpg"
+                        alt="Big Soto">
+                    <figcaption>
+                        The Venezuelan singer Big Soto, will premiere this Friday 08/27 the second part of his album
+                        "TGT
+                        DELUXE".
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure><img
+                        src="https://www.concierto.cl/wp-content/uploads/2021/08/Silk-Sonic-768x432.jpeg"
+                        alt="Silk Sonic and Bruno Mars">
+                    <figcaption>
+                        Silk Sonic confirmed that their debut album will arrive in January 2022.
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure><img
+                        src="https://rumberaaragua939fm.com/wp-content/uploads/2021/09/yandel-y-micro-tdh.jpg"
+                        alt="Micro TDH">
+                    <figcaption>
+                        The Venezuelan singer Micro TDH does not stop sweeping and announces a song with "LA LEYENDA"
+                        Yandel,
+                        this 08/31.
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+        <a class="top__btn" href="#">
+            <i class="fas fa-chevron-up"></i>
+        </a>
     </section>
-
-    <div class="roles">
-        <div class="role__text">
-            <div class="title__small">
-                <div class="role__container">
-                    <i class="fas fa-users"></i>
-                </div>
-                For community
-            </div>
-            <div class="text__block-15">
-                Get the news about your favorite artists.
-            </div>
-        </div>
-    </div>
-
-    <div class="roles">
-        <div class="role__text">
-            <div class="title__small">
-                <div class="role__container">
-                    <i class="fas fa-comments-dollar"></i>
-                </div>
-                For Publishers
-            </div>
-            <div class="text__block-15">
-                Distribute real news and receive royalties.
-            </div>
-        </div>
-    </div>
 </main>
-
-<ul class="gallery__list zoomIn">
-    <li>
-        <figure><img
-                src="https://cdn.thebeat.online/art/61/61/67/ab/ab6761610000e5eb3c60723b9aae00d037d4f0ed.jpg"
-                alt="Big Soto">
-            <figcaption>
-                The Venezuelan singer Big Soto, will premiere this Friday 08/27 the second part of his album "TGT
-                DELUXE".
-            </figcaption>
-        </figure>
-    </li>
-    <li>
-        <figure><img
-                src="https://www.concierto.cl/wp-content/uploads/2021/08/Silk-Sonic-768x432.jpeg"
-                alt="Silk Sonic and Bruno Mars">
-            <figcaption>
-                Silk Sonic confirmed that their debut album will arrive in January 2022.
-            </figcaption>
-        </figure>
-    </li>
-    <li>
-        <figure><img
-                src="https://rumberaaragua939fm.com/wp-content/uploads/2021/09/yandel-y-micro-tdh.jpg"
-                alt="Micro TDH">
-            <figcaption>
-                The Venezuelan singer Micro TDH does not stop sweeping and announces a song with "LA LEYENDA"
-                Yandel,
-                this 08/31.
-            </figcaption>
-        </figure>
-    </li>
-</ul>
-
 <div class="logos__stream--container">
     <div class="block__container">
         <img src="https://assets-global.website-files.com/5c5b0a009abbac199b244792/5f7c7dddd7c5e3db91eec99c_Spotify_330x140.png"
@@ -151,5 +113,9 @@
              alt="Tidal" class="logos__stream">
     </div>
 </div>
+<footer>
+    <p>&#169; 2021 <a href="#">Derechos de autor.</a></p>
+</footer>
 </body>
 </html>
+

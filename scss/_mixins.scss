@@ -1,3 +1,26 @@
+@mixin menu-container {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 75px;
+  width: 100%;
+  font-size: 18px;
+  box-shadow: 1px 1px 4px 0 $shadow-color;
+  background: $secondary-color-dark;
+  z-index: 2;
+}
+@mixin default-btn($color) {
+  align-items: center;
+  height: 36px;
+  width: 100px;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  color: $color;
+}
 @mixin gradient($color) {
   box-shadow: 0 0 6px $color, 0 0 15px $color, 0 0 30px $color, 0 0 100px $color;
 }
@@ -22,28 +45,4 @@
   color: $secondary-color;
 }
 
-@mixin default-btn($color) {
-  align-items: center;
-  height: 36px;
-  width: 100px;
-  font-size: 13px;
-  border: 0;
-  border-radius: 30px;
-  cursor: pointer;
-  color: $color;
-}
 
-@mixin menu {
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  top: 0;
-  left: 0;
-  height: 75px;
-  width: 100%;
-  box-shadow: 1px 1px 4px 0 $shadow-color;
-  background: $secondary-color-dark;
-  z-index: 2;
-}
