@@ -1,3 +1,15 @@
+@media screen and (min-width: 600px) {
+  .menu__container {
+    height: 65px;
+  }
+  .menu__logo {
+    font-size: 6px;
+  }
+  .main__title {
+    font-size: 1rem;
+  }
+}
+
 .menu__container {
   @include menu-container;
 
@@ -5,16 +17,16 @@
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 20px;
+    //font-size: 20px;
     padding: 0 30px;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
 
     h1 {
       color: $primary-color;
       background: linear-gradient(#3a7bd5, #3a6073);
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
-      font-size: 1.75em;
+      font-size: 1.5rem;
 
       &:hover {
         background: linear-gradient(#83a4d4 40%, #b6fbff);
@@ -24,6 +36,7 @@
       }
     }
   }
+
 
   .menu__items {
     padding: 7px 13px;
@@ -54,24 +67,24 @@
     cursor: pointer;
     color: $primary-color;
   }
+}
 
-  .menu__items .show {
-    top: 65px;
-  }
+.menu__items .show {
+  top: 65px;
+}
 
-  .menu__btn--login {
-    @include default-btn($secondary-color);
+.menu__btn--login {
+  @include default-btn($secondary-color);
 
-    &:hover {
+  &:hover {
+    transition: 0.3s ease;
+    background: $dark-blue-gray;
+    color: $primary-text-color;
+
+    &:active {
       transition: 0.3s ease;
-      background: $dark-blue-gray;
+      background: $secondary-color;
       color: $primary-text-color;
-
-      &:active {
-        transition: 0.3s ease;
-        background: $secondary-color;
-        color: $primary-text-color;
-      }
     }
   }
 }

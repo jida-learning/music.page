@@ -1,16 +1,16 @@
 .search__container {
-  position: relative;
-  display: flex;
+  //position: relative;
+  display: none;
+  font-size: 16px;
 
-  right: 130px;
+  right: 630px;
 
   .form__search {
     position: absolute;
     top: 4px;
     height: 34px;
-    padding: 0 17px;
-    width: 310px;
-    font-size: 16px;
+    padding: 0 0.5em;
+    width: 11em;
     border-radius: 30px;
     outline: none;
     transition: all 0.6s ease;
@@ -29,8 +29,22 @@
     width: 45px;
     height: 45px;
     font-size: 20px;
-    left: 250px;
+    left: 170px;
     background: $primary-color;
     color: $primary-text-color;
   }
 }
+
+//@media screen and (max-width: 414px) {
+//  .search__container {
+//    right: 2em;
+//  }
+//
+//  .form__search {
+//    width: 2em;
+//  }
+//
+//  .form__logo {
+//    left: 2em;
+//  }
+//}
