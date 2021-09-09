@@ -21,9 +21,15 @@
       height: 3px;
       place-items: center;
 
-      h3 {
+      h2 {
         font-size: 1.2rem;
         padding: 0;
+      }
+
+      p {
+        font-size: .9rem;
+        margin: 1em;
+        text-align: center;
       }
     }
 
@@ -40,12 +46,13 @@
     border-radius: 50px;
     right: 50px;
     bottom: 40px;
-    font-size: 20px;
+    font-size: 1rem;
     text-decoration: none;
     text-align: center;
     background: $primary-color;
     color: $secondary-text-color;
   }
+
   @media(min-width: 800px) {
     grid-template-columns: repeat(3, 1fr);
   }

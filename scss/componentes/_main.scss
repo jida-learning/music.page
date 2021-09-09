@@ -1,4 +1,10 @@
-@media(min-width: 800px) {
+@media screen and (min-width: 600px) {
+  .main__title {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
   .features__container {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -9,7 +15,7 @@ main {
   .main__title {
     margin: 160px 60px 60px;
     padding: 10px;
-    font-size: 3rem;
+    font-size: 1.3rem;
     letter-spacing: 5px;
     font-weight: bold;
     text-align: center;
@@ -27,6 +33,12 @@ main {
         place-items: center;
         padding: 15px;
 
+        @media screen and (min-width: 400px) {
+          .main__title {
+            font-size: 1.3rem;
+          }
+        }
+
         header {
 
           i {
@@ -41,7 +53,7 @@ main {
           place-items: center;
 
           h3 {
-            font-size: 1.2rem;
+            font-size: 0.8rem;
             padding: 0;
           }
         }
@@ -53,9 +65,21 @@ main {
     }
   }
 
-  @media (min-width: 600px) {
-    .main__title {
-      font-size: 1.2rem;
-    }
+  .top__btn {
+    display: none;
+    border: none;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 8px 10px;
+    margin: 0 30px;
+    font-size: 1.2rem;
+    left: 300px;
+    background: #005cb2;
+    color: #fff8dc;
   }
 }
