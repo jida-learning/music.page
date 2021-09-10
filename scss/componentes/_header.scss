@@ -55,12 +55,10 @@
     cursor: pointer;
     color: $primary-color;
   }
+
   @media screen and (min-width: 400px) {
-    .menu__container {
-      height: 65px;
-    }
     h1 {
-      font-size: 6px;
+      font-size: 1.5rem;
     }
   }
 }
