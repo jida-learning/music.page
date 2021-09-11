@@ -66,4 +66,13 @@
       }
     }
   }
+
+  @media screen and (min-width: 200px) {
+    width: 180px;
+    height: 115px;
+  }
+  @media screen and (min-width: 700px) {
+    width: 280px;
+    height: 195px;
+  }
 }
