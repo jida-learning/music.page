@@ -8,4 +8,8 @@ body {
   overflow-x: hidden;
   max-width: 1400px;
   width: 100%;
+
+  @media screen and (min-width: 1024px){
+    height: 100vh;
+  }
 }

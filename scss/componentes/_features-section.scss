@@ -31,6 +31,9 @@
         @media screen and (min-width: 700px){
           font-size: 1.3rem;
         }
+        @media screen and (min-width: 1024px){
+          font-size: 1.7rem;
+        }
       }
     }
 
@@ -48,6 +51,9 @@
       }
       @media screen and (min-width: 700px){
         font-size: 1.1rem;
+      }
+      @media screen and (min-width: 1024px){
+        font-size: 1.3rem;
       }
     }
   }

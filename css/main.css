@@ -10,6 +10,11 @@ body {
   max-width: 1400px;
   width: 100%;
 }
+@media screen and (min-width: 1024px) {
+  body {
+    height: 100vh;
+  }
+}
 
 .menu__container {
   position: fixed;
@@ -52,6 +57,11 @@ body {
 @media screen and (min-width: 700px) {
   .menu__container .menu__logo h1 {
     font-size: 1.7rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu__container .menu__logo h1 {
+    font-size: 2.1rem;
   }
 }
 .menu__container .menu__items {
@@ -107,6 +117,17 @@ body {
   .menu__container .menu__bar {
     left: 30em;
     font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu__container .menu__bar {
+    left: 94%;
+    font-size: 1.7rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu__container {
+    height: 75px;
   }
 }
 
@@ -216,6 +237,11 @@ main .main__title .features__container .feature__item .feature__detail {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+@media screen and (min-width: 1024px) {
+  main .main__title {
+    font-size: 2rem;
+  }
+}
 
 .top__btn {
   display: none;
@@ -308,6 +334,12 @@ main .main__title .features__container .feature__item .feature__detail {
     height: 195px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .gallery__list li {
+    width: 330px;
+    height: 245px;
+  }
+}
 
 .features__container {
   display: grid;
@@ -344,6 +376,11 @@ main .main__title .features__container .feature__item .feature__detail {
     font-size: 1.3rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  .features__container .feature__item header h2 {
+    font-size: 1.7rem;
+  }
+}
 .features__container .feature__item .feature__detail {
   margin-top: 30px;
 }
@@ -360,6 +397,11 @@ main .main__title .features__container .feature__item .feature__detail {
 @media screen and (min-width: 700px) {
   .features__container .feature__item p {
     font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .features__container .feature__item p {
+    font-size: 1.3rem;
   }
 }
 .features__container .top__btn {
@@ -380,34 +422,6 @@ main .main__title .features__container .feature__item .feature__detail {
   .features__container {
     grid-template-columns: repeat(3, 1fr);
   }
-}
-
-.playlist {
-  margin-top: 0;
-  margin-bottom: 40px;
-  color: #000;
-  font-size: 26px;
-  line-height: 50%;
-  font-weight: 600;
-  text-align: center;
-  display: flex;
-  left: 610px;
-  position: absolute;
-  align-content: space-between;
-  top: 900px;
-}
-
-.logos__stream--container {
-  display: flex;
-  height: 100px;
-  width: 100%;
-  margin-top: 20%;
-}
-.logos__stream--container .block__container {
-  align-content: space-between;
-  cursor: pointer;
-  margin-left: 100px;
-  display: flex;
 }
 
 .link__button {
@@ -545,6 +559,15 @@ main .main__title .features__container .feature__item .feature__detail {
   100% {
     transform: rotate(360deg);
   }
+}
+
+footer {
+  display: block;
+  text-align: center;
+  margin: 5em;
+}
+footer .text__footer {
+  text-decoration: none;
 }
 
 * {
