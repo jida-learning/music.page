@@ -1,4 +1,4 @@
-main {
+.container {
 
   .main__title {
     margin: 5em 1em 3em;
@@ -53,6 +53,9 @@ main {
       }
     }
     @media screen and (min-width: 1024px){
+      font-size: 2rem;
+    }
+    @media screen and (min-width: 1280px){
       font-size: 2rem;
     }
   }

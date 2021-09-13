@@ -27,34 +27,42 @@
         font-size: 1.2rem;
       }
       @media screen and (min-width: 700px) {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
       }
-      @media screen and (min-width: 1024px){
-        font-size: 2.1rem;
+      @media screen and (min-width: 1024px) {
+        font-size: 1.8rem;
       }
     }
   }
 
+  .menu__features {
+    display: none;
 
-  .menu__items {
-    padding: 7px 13px;
-    font-size: 1em;
-    text-decoration: none;
-    color: $primary-text-color;
-    font-weight: bold;
-    text-transform: uppercase;
+    .menu__items {
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-right: 15px;
+      padding: 7px 13px;
+      font-size: 1em;
+      color: $primary-text-color;
 
-    &:hover {
-      background: $shadow-color;
-      border: 1px solid $primary-color;
-      color: $primary-color;
-      transition: all 0.1s ease;
-
-      &:active {
-        border-bottom: 3px solid $primary-color-dark;
-        color: $primary-color-dark;
+      &:hover {
+        background: $shadow-color;
+        border: 1px solid $primary-color;
+        color: $primary-color;
         transition: all 0.1s ease;
+
+        &:active {
+          border-bottom: 3px solid $primary-color-dark;
+          color: $primary-color-dark;
+          transition: all 0.1s ease;
+        }
       }
+    }
+
+    @media screen and (min-width: 1280px) {
+      display: flex;
     }
   }
 
@@ -67,30 +75,39 @@
     cursor: pointer;
     color: $primary-color;
 
-    @media screen and (min-width: 280px){
-      left: 250px;
-    }
-    @media screen and (min-width: 300px){
+    @media screen and (min-width: 280px) {
       left: 85%;
     }
-    @media screen and (min-width: 400px) {
-      left: 360px;
-    }
+    //@media screen and (min-width: 300px) {
+    //  left: 85%;
+    //}
+    //@media screen and (min-width: 400px) {
+    //  left: 360px;
+    //}
     @media screen and (min-width: 500px) {
-      left: 490px;
-      font-size: 1.5rem;
-    }
-    @media screen and (min-width: 700px) {
-      left: 30em; //aplique la unidad `em` porque con px serian 700px y me parecio super grande
+      //left: 490px;
       font-size: 1.3rem;
     }
-    @media screen and (min-width: 1024px){
+    @media screen and (min-width: 700px) {
+      left: 90%; //aplique la unidad (30)`em` porque con px serian 700px y me parecio super grande
+      font-size: 1.3rem;
+    }
+    @media screen and (min-width: 1024px) {
       left: 94%;
       font-size: 1.7rem;
     }
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
   }
-  @media screen and (min-width: 1024px){
+
+  @media screen and (min-width: 1024px) {
     height: 75px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    padding: 8px;
+    margin-right: 1.3em;
   }
 }
 

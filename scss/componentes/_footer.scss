@@ -1,7 +1,10 @@
 footer {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
-  margin: 5em;
+  min-height: 15vh;
+  width: 100%;
+  background: $secondary-color-dark;
 
   .text__footer {
     text-decoration: none;
